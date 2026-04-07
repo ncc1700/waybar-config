@@ -1,10 +1,10 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    //"position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
-    "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    // "layer": "top",
+    "position": "top",
+    "height": 30,
+    "width": 500,
+    "spacing": 8,
     "modules-right": [
         "clock",
     ],
@@ -17,20 +17,13 @@
         "tray"
     ],
 
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
     "tray": {
         "spacing": 10,
     },
     "clock": {
         "timezone": "America/Chicago",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-	"format": "{:%I:%M %p}",
+        "format": "{:%I:%M %p}",
         "format-alt": "{:%m/%d/%Y}"
     },
     "battery": {
@@ -39,32 +32,19 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format": "BAT: {capacity}%",
+        "format-full": "BAT: {capacity}%",
+        "format-charging": "BAT: {capacity}%",
+        "format-plugged": "{capacity}%",
+        "format-alt": "???",
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "(silent) {format_source}",
-        "format-source": "{volume}%  ",
-        "format-source-muted": " ",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
+        "format": "VOL: {volume}%",
+        "format-bluetooth": "VOL: {volume}%",
+        "format-bluetooth-muted": "VOL: SILENT",
+        "format-muted": "VOL: SILENT",
+        "format-source": "MIC: {volume}%",
+        "format-source-muted": " MIC MUTED",
         "on-click": "pavucontrol"
     },
 }

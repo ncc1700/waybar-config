@@ -6,21 +6,16 @@
     font-size: 14px;
 }
 
-/* Module-specific styling */
 #clock {
     padding: 0 10px;
 }
 
-#battery {
-    padding: 0 10px;
-}
+/*#battery {
+    padding: 0 px;
+}*/
 
 #pulseaudio {
-    padding: 1 10px;
+    padding: 0 6px;
 }
 
-/* Styling for custom modules */
-#custom-arch_logo {
-    padding: 0 10px;
-    color: #e06c75;
-}
+
