@@ -6,7 +6,7 @@
     "width": 500,
     "spacing": 8,
     "modules-right": [
-        "clock",
+        "clock"
     ],
     "modules-center": [
 
@@ -18,7 +18,7 @@
     ],
 
     "tray": {
-        "spacing": 10,
+        "spacing": 10
     },
     "clock": {
         "timezone": "America/Chicago",
@@ -36,7 +36,7 @@
         "format-full": "BAT: {capacity}%",
         "format-charging": "BAT: {capacity}%",
         "format-plugged": "{capacity}%",
-        "format-alt": "???",
+        "format-alt": "???"
     },
     "pulseaudio": {
         "format": "VOL: {volume}%",
@@ -46,5 +46,5 @@
         "format-source": "MIC: {volume}%",
         "format-source-muted": " MIC MUTED",
         "on-click": "pavucontrol"
-    },
+    }
 }
