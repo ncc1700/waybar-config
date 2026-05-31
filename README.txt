@@ -1,1 +1,4 @@
-credit to Kamlendra Singh (kamlendras) for the template i built upon
+waybar config
+
+
+very simple, not much going on
